@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<HBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/11.0.1"
+        xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab5.Ex2Controller" >
+    <VBox style="-fx-padding: 0;">
+        <ImageView fx:id="header"
+                   fitWidth="300"
+                   preserveRatio="true"
+                   pickOnBounds="true">
+            <Image url="@/images/header.jpg" />
+        </ImageView>
+        <ImageView fx:id="body"
+                   fitWidth="300"
+                   preserveRatio="true"
+                   pickOnBounds="true">
+            <Image url="@/images/body.jpg" />
+        </ImageView>
+        <ImageView fx:id="footer"
+                   fitWidth="300"
+                   preserveRatio="true"
+                   pickOnBounds="true">
+            <Image url="@/images/footer.jpg" />
+        </ImageView>
+    </VBox>
+    <VBox style="-fx-padding: 20;">
+
+    <CheckBox fx:id="checkbox1"
+              text="Header"
+              selected="true"
+              onAction="#handleCheckboxAction">
+    </CheckBox>
+
+    <CheckBox fx:id="checkbox2"
+              text="Body"
+              selected="true"
+              onAction="#handleCheckboxAction">
+    </CheckBox>
+
+    <CheckBox fx:id="checkbox3"
+              text="Footer"
+              selected="true"
+              onAction="#handleCheckboxAction">
+    </CheckBox>
+    </VBox>
+</HBox>
+

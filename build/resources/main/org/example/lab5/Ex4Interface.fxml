@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<AnchorPane prefHeight="610.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab5.Ex4Controller"
+            style="-fx-background-color: #2E2E2E;">
+  <Pane layoutX="6.0" layoutY="37.0" prefHeight="567.0" prefWidth="449.0" styleClass="mainPane">
+    <Pane layoutX="14.0" layoutY="14.0" prefHeight="116.0" prefWidth="422.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+      <Label fx:id="lblResult" alignment="CENTER_RIGHT" layoutX="20.0" layoutY="40.0" prefHeight="42.0"
+             prefWidth="383.0" text="0.0" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';">
+      </Label>
+    </Pane>
+
+    <!-- Buttons with rounded corners and centered content -->
+    <Pane fx:id="btn7" layoutX="14.0" layoutY="137.0" onMouseClicked="#onNumberClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="7" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <Pane fx:id="btn8" layoutX="121.0" layoutY="137.0" onMouseClicked="#onNumberClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="8" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <Pane fx:id="btn9" layoutX="228.0" layoutY="137.0" onMouseClicked="#onNumberClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="9" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <Pane fx:id="btnPlus" layoutX="336.0" layoutY="137.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="+" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <!-- More buttons with similar style -->
+    <Pane fx:id="btn4" layoutX="15.0" layoutY="243.0" onMouseClicked="#onNumberClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="4" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <Pane fx:id="btn5" layoutX="122.0" layoutY="243.0" onMouseClicked="#onNumberClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="5" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <Pane fx:id="btn6" layoutX="229.0" layoutY="243.0" onMouseClicked="#onNumberClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="6" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <Pane fx:id="btnMinus" layoutX="337.0" layoutY="243.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="-" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <Pane fx:id="btn1" layoutX="14.0" layoutY="349.0" onMouseClicked="#onNumberClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="1" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <Pane fx:id="btn2" layoutX="121.0" layoutY="349.0" onMouseClicked="#onNumberClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="2" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <Pane fx:id="btn3" layoutX="228.0" layoutY="349.0" onMouseClicked="#onNumberClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="3" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <Pane fx:id="btnMultiply" layoutX="336.0" layoutY="349.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="*" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <Pane fx:id="btnDivide" layoutX="336.0" layoutY="455.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="/" textFill="#000000" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <Pane fx:id="btnClear" layoutX="15.0" layoutY="455.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #FF6F61; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="37.0" layoutY="29.0" text="C" textFill="#FFFFFF" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+
+    <Pane fx:id="btnEquals" layoutX="229.0" layoutY="455.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0"
+          prefWidth="100.0" style="-fx-background-color: #2E7D32; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+      <Label layoutX="35.0" layoutY="29.0" text="=" textFill="#FFFFFF" style="-fx-font-size: 36px; -fx-font-family: 'Arial';"/>
+    </Pane>
+  </Pane>
+</AnchorPane>
